@@ -80,7 +80,7 @@ button {
     color: #8dac6f;
 }
 
-.cancle {
+.close {
     display: none;
 }
 
@@ -247,6 +247,76 @@ button {
     cursor: pointer;
 }
 
+/* ############### login page ################# */
+
+#loginsection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: aliceblue;
+}
+
+.loginbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.1),
+                -1px -1px 1px 1px rgba(0,0,0,0.1);
+    border-radius: 7px;
+    margin-top: 50px;
+    background-color: #fff;
+    width: 60%;
+    height: 80vh;
+    margin-bottom: 5px;
+}
+
+.loginImg {
+    text-align: center;
+    margin: 30px;
+}
+
+.formbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-top: 35px;
+}
+.formbox form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.formbox form input[type="text"],[type="password"] {
+    width: 350px;
+    padding: 10px 5px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ca9648;
+}
+
+.formbox form input:focus {
+    outline: none;
+}
+
+.formbox form .btnlogin {
+    width: 100%;
+}
+
+
+
+/* ############ Media quary ########### */
+
 @media (max-width:878px) {
 
     #navbar {
@@ -269,7 +339,7 @@ button {
         right: 0;
     }
 
-    #navbar .cancle {
+    #navbar .close {
         display: flex;
         margin-bottom: 24px;
         font-size: 2rem;
@@ -280,4 +350,16 @@ button {
         display: flex;
     }
 
+    #topbanner {
+        height: 40vh;
+    }
+
+    #mid-banner {
+        height: 25vh;
+    }
+
+    .loginbox {
+        margin-top: 300px;
+        height: 40vh;
+    }
 }
