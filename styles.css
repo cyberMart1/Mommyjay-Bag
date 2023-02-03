@@ -297,6 +297,109 @@ button {
     flex-direction: column;
 }
 
+/* ############# Bag Details page ################# */
+
+#bag-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+#bag-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    padding: 50px 50px 0 50px;
+}
+
+.mainImg img{
+    width: 100%;
+    height: 350px;
+}
+
+#sm-img {
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 24px;
+    padding: 10px 0;
+}
+
+.smallImg {
+    height: 100px;
+    width: 90px;
+}
+
+#bag-details#bag-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 50%;
+    padding: 50px 50px 0 50px;
+}
+
+#bag-info h5 {
+    font-size: 14px;
+    color: #cfc7c7;
+    margin-bottom: 50px;
+}
+
+#bag-info h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1b1b1b;
+    margin-bottom: 20px;
+}
+
+#bag-info select {
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+#bag-info select:focus {
+    outline: none;
+}
+
+#bag-info input {
+    width: 60px;
+    padding: 8px 5px;
+    border-radius: 4px;
+    border: 1px solid #284919;
+}
+
+#bag-info input:focus {
+    outline: none;
+}
+
+#bag-info button {
+    color: #fff;
+    background: #284919;
+}
+
+#bag-info button:hover {
+    background: #57723c;
+}
+
+#bag-info h3 {
+    font-weight: 700;
+    margin-top: 15px;
+}
+
+#bag-info p {
+    line-height: 1.2;
+    font-size: 16px;
+}
+
+
+
+
+
 .formbox form input[type="text"],[type="password"] {
     width: 350px;
     padding: 10px 5px;
@@ -363,3 +466,4 @@ button {
         height: 40vh;
     }
 }
+

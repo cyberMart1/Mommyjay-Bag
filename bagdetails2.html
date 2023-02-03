@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="bootstrap-4.6.2-dist/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="bootstrap-4.6.2-dist/css/bootstrap.min.css">
+
+    <script src="https://kit.fontawesome.com/15cbef88d9.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="styles.css">
+    <title>Home</title>
+</head>
+<body>
+    <section id="header">
+        <a href="index.html"><img src="assets/logoMommyJay0.jpg"></a>
+        <div id="headNav">
+            <ul id="navbar">
+                <i class="fas fa-times close"></i>
+                <li><a href="index.html" class="activemode">Home</a></li>
+                <li><a href="#">blogs</a></li>
+                <li><a href="#">Bags</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Sign In</a></li>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="#"><i class="fas fa-cart-shopping"></i></a>
+            <i class="fa-solid fa-outdent" id="bar"></i>
+        </div>
+    </section>
+
+    <section id="bag-details">
+        <div id="bag-img">
+            <div class="mainImg">
+                <img src="assets/b4.jpg" id="mainImg" width="100%" alt="">
+            </div>
+            
+            <div id="sm-img">
+                <div class="small-Imgs">
+                    <img src="assets/b4.jpg" class="smallImg" width="100%" alt="">
+                </div>
+                <div class="small-Imgs">
+                    <img src="assets/b2.jpg" class="smallImg" width="100%" alt="">
+                </div>
+                <div class="small-Imgs">
+                    <img src="assets/b5.jpg" class="smallImg" width="100%" alt="">
+                </div>
+                <div class="small-Imgs">
+                    <img src="assets/b6.jpg" class="smallImg" width="100%" alt="">
+                </div>
+            </div>
+        </div>
+        <div id="bag-info">
+            <h5>Mexico Hand-Made Bag</h5>
+
+            <h2>MULTICOLOR CAPARITO</h2>
+
+            <select>
+                <option>select size</option>
+                <option>Side-Bag</option>
+                <option>Hand-bag</option>
+            </select>
+            <div>
+                <input type="number" id="quantity" min="1" value="1">
+                <button>Add to Cart</button>
+            </div>
+
+            <h3>Bag Details</h3>
+
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque, aut, et quae est 
+                voluptatem sit soluta dolores eaque voluptas repudiandae harum odit voluptatibus quod
+                commodi earum illum tenetur. Sed, dicta! Doloremque dolorem, voluptatem quaerat illum quod
+                fuga vero sint saepe facilis voluptatum, voluptas mollitia rem earum cumque quisquam
+                tempore deserunt quis similique, delectus corrupti eius iste. Commodi a quam officiis?</p>
+            
+        </div>
+    </section>
+
+    <div class="topcontent">
+        <h2>Feature Products</h2>
+        <span>The newest collections</span>
+    </div>
+
+    <section id="products">       
+        <div id="box">
+                <img src="assets/b2.jpg" width="100%">
+                <span>Home-made</span>
+                <h2>Mexico Bag</h2>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <h5>$65</h5>
+                <a href="#"><i class="fas fa-cart-plus cart"></i></a>        
+        </div>
+    <div id="box">
+        <img src="assets/b3.jpg" width="100%">
+        <span>Home-made</span>
+        <h2>Mexico Bag</h2>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <h5>$65</h5>
+        <a href="#"><i class="fas fa-cart-plus cart"></i></a>        
+    </div>
+    <div id="box">
+        <img src="assets/b4.jpg" width="100%">
+
+        <span>Home-made</span>
+        <h2>Mexico Bag</h2>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <h5>$65</h5>
+        <a href="#"><i class="fas fa-cart-plus cart"></i></a>        
+    </div>
+    <div id="box">
+        <img src="assets/b5.jpg" width="100%">
+
+        <span>Home-made</span>
+        <h2>Mexico Bag</h2>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <h5>$65</h5>
+        <a href="#"><i class="fas fa-cart-plus cart"></i></a>        
+    </div>
+    </section>
+
+    <section id="newsletter"></section>
+
+
+
+    <script>
+        // script for bagdetails page
+
+        var mainImgEl = document.getElementById('mainImg')
+        var smallImgEl = document.getElementsByClassName('smallImg')
+
+        smallImgEl[0].onclick = function () {
+            mainImgEl.src = smallImgEl[0].src
+        }
+
+        smallImgEl[1].onclick = function () {
+            mainImgEl.src = smallImgEl[1].src
+        }
+
+        smallImgEl[2].onclick = function () {
+            mainImgEl.src = smallImgEl[2].src
+        }
+
+        smallImgEl[3].onclick = function () {
+            mainImgEl.src = smallImgEl[3].src
+        }
+    </script>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="bootstrap-4.6.2-dist/js/bootstrap.min.js"></script>
+    <script src="apps.js"></script>
+</body>
+</html>
