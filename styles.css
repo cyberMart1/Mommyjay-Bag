@@ -62,13 +62,14 @@ button {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    margin: 0;
 }
 
 #navbar li {
     font-size: 24px;
     font-weight: 600;
     list-style: none;
-    padding: 10px 20px;
+    padding: 5px 10px;
 }
 
 #navbar li a {
@@ -297,13 +298,77 @@ button {
     flex-direction: column;
 }
 
+/* ############## two banner (3rd banner) ################## */
+#two-banner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 50vh;
+    margin-top: 40px;
+}
+
+.tricontent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    width: 610px;
+    background: url("assets/b1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px;
+    margin: 0 10px;
+    color: #fff;
+    border-radius: 6px;
+}
+
+.tricontent h3 {
+    font-weight: 700;
+    color: #db1d26;
+}
+
+.tricontent p {
+    color: #fff;
+    margin: 0;
+}
+
+.tricontent p span {
+    color: #ca262e;
+}
+
+.tricontent label {
+    font-size: 14px;
+    color: #284919;
+}
+
+.tricontent.second {
+    background: url("assets/b2.1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;;
+}
+
+.tricontent button {
+    background: transparent;
+    width: 150px;
+    color: #3abd56;
+    border: 1px solid #284919;
+    margin-top: 50px;
+    transition: 0.4s ease;
+}
+
+.tricontent button:hover {
+    background-color: #284919;
+    color: #fff;
+}
+
+
 /* ############### News letter Section ################# */
-*
+
 #newsletter {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 80px 0;
+    margin: 20px 0;
     width: 100%;
     height: 40vh;
     background: url("assets/b7.jpg");
@@ -497,11 +562,75 @@ button {
 
 /* ############# footer ################# */
 
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+    background: #ecebeb;
+    padding-top: 10px;
+    padding-left: 10px;
+}
 
+#footsy a {
+    text-decoration: none;
+}
+
+footer p {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+footer .copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    width: 100%;
+    padding-bottom: 5px;
+}
+
+#footsy a p:hover {
+    color: #6cb91f;
+}
+
+#footsy .secureText {
+    padding: 10px 0;
+}
+
+footer h2 {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+footer h4 {
+    font-weight: 600;
+    font-size: 16px;
+    margin: 50px 0;
+}
+
+#footsy i {
+    padding: 0 10px;
+    color: #1b1b1b;
+}
+
+
+#footsy {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    padding: 20px 30px;
+}
+
+.foot-content {
+    margin: 10px 20px;
+}
 
 /* ############ Media quary ########### */
 
-@media (max-width:878px) {
+@media (max-width:899px) {
 
     #navbar {
         display: flex;
@@ -549,6 +678,11 @@ button {
 
     #topbanner button {
         width: 30%;
+    }
+
+    .tricontent {
+        width: 100%;
+        margin-top:10px;
     }
 
 #newsletter {
@@ -611,6 +745,10 @@ button {
     #bag-info {
         margin-top: 20px;
         padding-left: 10px;
+    }
+
+    #newsletter {
+        height: 100vh;
     }
 }
 
